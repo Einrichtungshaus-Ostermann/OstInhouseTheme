@@ -16,7 +16,7 @@
 {block name='frontend_detail_index_notification'}{/block}
 
 {* remove buy button *}
-{block name="frontend_detail_index_buybox"}{/block}
+{* {block name="frontend_detail_index_buybox"}{/block} *}
 
 
 
