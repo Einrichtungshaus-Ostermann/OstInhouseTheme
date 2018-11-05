@@ -79,7 +79,12 @@ class Theme extends \Shopware\Components\Theme
      */
 
     protected $javascript = array(
-        'src/js/jquery.ost-image-zoom.js'
+        'src/js/override/jquery.loading-indicator.js',
+        'src/js/override/jquery.modal.js',
+        'src/js/override/jquery.overlay.js',
+        'src/js/jquery.ost-image-zoom.js',
+        'src/js/jquery.ost-article-tabs.js'
     );
+    
 
 }

@@ -1,0 +1,58 @@
+
+
+
+.js--loading-indicator {
+    .unitize-padding(20, 20, 20, 20);
+    position: fixed;
+    display: none;
+    left: 50%;
+    top: 50%;
+    z-index: 6000;
+
+    &.indicator--relative {
+        .unitize-width(30);
+        .unitize-height(30);
+        .unitize(padding-top, 50);
+        .unitize(padding-bottom, 50);
+        background: none;
+        position: relative;
+        display: block;
+        left: 50%;
+        top: auto;
+        border: 0 none;
+    }
+
+    &.indicator--absolute {
+        .indicator--relative();
+        &.js--loading-indicator { .unitize-margin(-15, 0, 0, -15) };
+        position: absolute;
+        padding: 0;
+        top: 50%;
+    }
+}
+
+
+    .js--loading-indicator {
+        .unitize-margin(-33, 0, 0, -33);
+
+        div[class^="icon--"] {
+            .unitize-width(26);
+            .unitize-height(26);
+
+            display: block;
+        }
+
+        .icon--default:before,
+        .icon--default::before {
+            .unitize-width(22);
+            .unitize-height(22);
+            .border-radius(100%);
+            .animation(keyframe--spin 1s linear infinite);
+            display: block;
+            content: "";
+            border: 2px solid #dadae5;
+            border-top: 2px solid darken(#8f8fb1, 25%);
+        }
+    }
+
+
