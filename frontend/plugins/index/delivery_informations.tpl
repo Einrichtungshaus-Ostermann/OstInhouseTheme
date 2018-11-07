@@ -9,11 +9,14 @@
 
     <div class="product--delivery">
 
+        {* get attributes based on available data *}
+        {$package = ( isset( $sArticle.additional_details.attributes.core ) ) ? $sArticle.additional_details.attributes.core->get( "attr13" ) : $sArticle.attr13}
+
         {* do we have the article in stock? *}
         {if $sArticle.instock > 0}
 
             {* are we sending as default dhl package? *}
-            {if $sArticle.attr13 == "P"}
+            {if $package == "P"}
 
                 <p class="delivery--information">
                 <span class="delivery--text delivery--green">
@@ -50,7 +53,11 @@
                 <p class="delivery--information">
                 <span class="delivery--text delivery--yellow">
                     <i class="delivery--status-icon delivery--status-yellow"></i>
-                    {s name="detail-data-shipping--no-stock--delivery-time"}Lieferzeit ca. {$sArticle.attr12} Wochen{/s}
+                    {if ( isset( $sArticle.additional_details.attributes.core ) )}
+                        {s name="detail-data-shipping--no-stock--delivery-time--checkout"}Lieferzeit ca. {$sArticle.additional_details.attributes.core->get( "attr12" )} Wochen{/s}
+                    {else}
+                        {s name="detail-data-shipping--no-stock--delivery-time"}Lieferzeit ca. {$sArticle.attr12} Wochen{/s}
+                    {/if}
                 </span>
                 </p>
 
