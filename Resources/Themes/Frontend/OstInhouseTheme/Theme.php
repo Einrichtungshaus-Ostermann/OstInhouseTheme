@@ -70,7 +70,7 @@ class Theme extends \Shopware\Components\Theme
 
     protected $license = "New BSD";
 
-
+    protected $injectBeforePlugins = true;
 
     /**
      * ...
