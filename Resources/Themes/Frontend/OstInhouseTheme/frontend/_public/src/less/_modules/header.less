@@ -1,0 +1,99 @@
+
+
+
+header.header-main {
+
+
+    // defaults for search container
+    nav.shop--navigation li.navigation--entry.entry--search {
+        width: 60%;
+        margin-top: 5px;
+
+        form.main-search--form {
+            border: 0;
+
+            input.main-search--field {
+                background: white;
+                border: 1px solid #bfbfbf;
+                border-radius: 0;
+            }
+
+            button.main-search--button {
+                i.icon--search {
+                }
+            }
+        }
+    }
+
+
+
+    // logo
+    div.logo-main {
+        div.logo--shop {
+            width: 100%;
+        }
+    }
+
+
+
+
+
+    // back and forth navigation
+    nav.shop--navigation li.navigation--entry.entry--navigaton-back,
+    nav.shop--navigation li.navigation--entry.entry--navigaton-forth{
+        font-size: 52px;
+        position: absolute;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    nav.shop--navigation li.navigation--entry.entry--navigaton-back {
+        width: 10%;
+        right: 10%;
+    }
+
+    nav.shop--navigation li.navigation--entry.entry--navigaton-forth {
+        width: 10%;
+        right: 0;
+    }
+
+
+
+    // shopping cart icon
+    nav.shop--navigation li.navigation--entry.entry--cart {
+        position: absolute;
+        cursor: pointer;
+        width: 10%;
+        right: 20%;
+
+        a.cart--link {
+            border: 0;
+            background: none;
+
+            span.badge.cart--quantity {
+                margin-left: 20px;
+                margin-top: 4px;
+                color: inherit;
+                background: white;
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            i.icon--basket {
+                font-size: 33px;
+                padding-top: 4px;
+            }
+
+            span.cart--amount {
+                display: none;
+            }
+
+        }
+
+        a.cart--link:hover {
+            color: inherit;
+        }
+    }
+
+}
+

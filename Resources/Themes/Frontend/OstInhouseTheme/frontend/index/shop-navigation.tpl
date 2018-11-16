@@ -7,14 +7,14 @@
 {* append back and forth buttons *}
 {block name='frontend_index_search'}
 
+    {* parent first *}
     {$smarty.block.parent}
 
-    <li onclick="window.history.back()" class="icon--arrow-left3" style="font-size: 50px; position: absolute; left: 60%; cursor: pointer;"></li>
-    <li onclick="window.history.forward()" class="icon--arrow-right3" style="font-size: 50px; position: absolute; left: 70%; cursor: pointer;"></li>
+    {* back and forth button *}
+    <li onclick="window.history.back()" class="navigation--entry entry--navigaton-back icon--arrow-left3" style=""></li>
+    <li onclick="window.history.forward()" class="navigation--entry entry--navigaton-forth icon--arrow-right3" style=""></li>
 
-
-
-
-    <li class="icon--evernote ost-consultant--login" style="font-size: 50px; position: absolute; left: 80%; cursor: pointer;"></li>
+    {* experimental consultant login button *}
+    {* <li class="icon--evernote ost-consultant--login" style="font-size: 50px; position: absolute; left: 80%; cursor: pointer;"></li> *}
 
 {/block}
