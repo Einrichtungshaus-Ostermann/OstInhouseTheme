@@ -97,3 +97,45 @@ header.header-main {
 
 }
 
+
+
+
+
+// fix tablet viewport
+@media screen and (max-width: @tabletLandscapeViewportWidth) and (min-width: @tabletViewportWidth) {
+
+
+
+    header.header-main {
+
+
+
+        // shopping cart icon
+        nav.shop--navigation li.navigation--entry.entry--cart {
+            margin-top: 6px;
+            margin-left: -20px;
+
+            a.cart--link {
+
+                span.badge.cart--quantity {
+                    margin-left: 10px;
+                    margin-top: 0px;
+                }
+
+                i.icon--basket {
+                }
+
+                span.cart--amount {
+                }
+
+            }
+
+            a.cart--link:hover {
+            }
+        }
+
+    }
+
+}
+
+
