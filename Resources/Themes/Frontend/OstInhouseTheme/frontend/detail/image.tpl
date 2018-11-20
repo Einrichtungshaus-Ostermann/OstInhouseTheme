@@ -7,8 +7,6 @@
 {* remove dot navigation *}
 {block name='frontend_detail_image_box_dots'}{/block}
 
-
-
 {* remove thumbnails here *}
 {block name='frontend_detail_image_thumbs'}{/block}
 
