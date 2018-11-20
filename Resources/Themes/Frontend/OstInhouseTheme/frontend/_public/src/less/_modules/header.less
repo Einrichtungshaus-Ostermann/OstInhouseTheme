@@ -1,8 +1,5 @@
 
-
-
 header.header-main {
-
 
     // defaults for search container
     nav.shop--navigation li.navigation--entry.entry--search {
@@ -25,18 +22,12 @@ header.header-main {
         }
     }
 
-
-
     // logo
     div.logo-main {
         div.logo--shop {
             width: 100%;
         }
     }
-
-
-
-
 
     // back and forth navigation
     nav.shop--navigation li.navigation--entry.entry--navigaton-back,
@@ -56,8 +47,6 @@ header.header-main {
         width: 10%;
         right: 0;
     }
-
-
 
     // shopping cart icon
     nav.shop--navigation li.navigation--entry.entry--cart {
@@ -87,7 +76,6 @@ header.header-main {
             span.cart--amount {
                 display: none;
             }
-
         }
 
         a.cart--link:hover {
@@ -99,16 +87,10 @@ header.header-main {
 
 
 
-
-
 // fix tablet viewport
 @media screen and (max-width: @tabletLandscapeViewportWidth) and (min-width: @tabletViewportWidth) {
 
-
-
     header.header-main {
-
-
 
         // shopping cart icon
         nav.shop--navigation li.navigation--entry.entry--cart {
@@ -127,15 +109,27 @@ header.header-main {
 
                 span.cart--amount {
                 }
-
             }
 
             a.cart--link:hover {
             }
         }
-
     }
-
 }
 
+
+
+// show login button by default
+body header.header-main {
+    nav.shop--navigation li.icon--evernote.ost-consultant--login {
+        // display: none;
+    }
+}
+
+// hide login button when logged in
+body.is--consultant header.header-main {
+    nav.shop--navigation li.icon--evernote.ost-consultant--login {
+        display: none;
+    }
+}
 
