@@ -66,6 +66,7 @@ class Theme extends \Shopware\Components\Theme
         'src/js/override/jquery.modal.js',
         'src/js/override/jquery.overlay.js',
         'src/js/jquery.ost-image-zoom.js',
-        'src/js/jquery.ost-article-tabs.js'
+        'src/js/jquery.ost-article-tabs.js',
+        'src/js/jquery.ost-sticky-filter.js'
     ];
 }
