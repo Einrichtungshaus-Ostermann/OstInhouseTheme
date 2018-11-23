@@ -10,7 +10,8 @@
     <div class="product--delivery">
 
         {* get attributes based on available data *}
-        {$package = ( isset( $sArticle.additional_details.attributes.core ) ) ? $sArticle.additional_details.attributes.core->get( "attr13" ) : $sArticle.attr13}
+        {$package = ( isset( $sArticle.additional_details.attributes.core ) ) ? $sArticle.additional_details.attributes.core->get( $theme.attribute_shipping_method ) : $sArticle[$theme.attribute_shipping_method]}
+        {$deliveryTime = ( isset( $sArticle.additional_details.attributes.core ) ) ? $sArticle.additional_details.attributes.core->get( $theme.attribute_delivery_time ) : $sArticle[$theme.attribute_delivery_time]}
 
         {* do we have the article in stock? *}
         {if $sArticle.instock > 0}
@@ -53,11 +54,7 @@
                 <p class="delivery--information">
                 <span class="delivery--text delivery--yellow">
                     <i class="delivery--status-icon delivery--status-yellow"></i>
-                    {if ( isset( $sArticle.additional_details.attributes.core ) )}
-                        {s name="detail-data-shipping--no-stock--delivery-time--checkout"}Lieferzeit ca. {$sArticle.additional_details.attributes.core->get( "attr12" )} Wochen{/s}
-                    {else}
-                        {s name="detail-data-shipping--no-stock--delivery-time"}Lieferzeit ca. {$sArticle.attr12} Wochen{/s}
-                    {/if}
+                    {s name="detail-data-shipping--no-stock--delivery-time--short"}Lieferzeit ca. {$deliveryTime} Wochen{/s}
                 </span>
                 </p>
 
