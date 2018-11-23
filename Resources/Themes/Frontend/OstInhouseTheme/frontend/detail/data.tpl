@@ -16,47 +16,37 @@
 {block name='frontend_detail_data_delivery'}
 
     {* only show delivery information when we have order-articles *}
-    {if $sArticle.attr11 == "B"}
+    {if $sArticle[$theme.attribute_dispo] == "B"}
         {$smarty.block.parent}
     {/if}
 
 
 
     {* shipping costs... first by company *}
-    {if $sArticle.attr1 == "1"}
+    {if $sArticle[$theme.attribute_company] == "1"}
 
-        {* only small articles with own shipping costs *}
-        {if $sArticle.attr2 > 90}
+        {* check if we have a fullservice price *}
+        {if $sArticle[$theme.attribute_fullservice] == "2"}
 
-            {* display calculated shipping costs *}
-            Versand: {$sArticle.attr8|currency}
+            {* everything included *}
+            Vollservicepreis inkl. Lieferung und Montage
 
         {else}
 
-            {* check if we have a fullservice price *}
-            {if $sArticle.attr18 == "2"}
+            {* always shipping costs *}
+            Versand: {$sArticle[$theme.attribute_shipping_costs]|currency}
 
-                {* everything included *}
-                Vollservicepreis inkl. Lieferung und Montage
-
-            {else}
-
-                {* always shipping costs *}
-                Versand: {$sArticle.attr15|currency}
-
-                {* and optional assembly *}
-                {if $sArticle.attr16 > 0}
-                    Montage zzgl. {$sArticle.attr16|currency}
-                {/if}
-
+            {* and optional assembly *}
+            {if $sArticle[$theme.attribute_assembly_surcharge] > 0}
+                Montage zzgl. {$sArticle[$theme.attribute_assembly_surcharge]|currency}
             {/if}
 
         {/if}
 
-    {elseif $sArticle.attr1 == "3"}
+    {elseif $sArticle[$theme.attribute_company] == "3"}
 
         {* we have ONLY calculated shipping costs *}
-        Versand: {$sArticle.attr8|currency}
+        Versand: {$sArticle[$theme.attribute_shipping_costs]|currency}
 
     {/if}
 
