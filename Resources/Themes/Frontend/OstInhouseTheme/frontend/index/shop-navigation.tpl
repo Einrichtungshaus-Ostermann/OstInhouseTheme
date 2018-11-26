@@ -15,6 +15,6 @@
     <li onclick="window.history.forward()" class="navigation--entry entry--navigaton-forth icon--arrow-right3" style=""></li>
 
     {* experimental consultant login button *}
-    <li class="icon--evernote ost-consultant--login" style="position: absolute; cursor: pointer; width: 10%; right: 20%; font-size: 50px; opacity: 0;"></li>
+    <li class="icon--evernote ost-consultant--login" style="position: absolute; cursor: pointer; width: 15%; right: 20%; font-size: 50px; opacity: 0;"></li>
 
 {/block}
