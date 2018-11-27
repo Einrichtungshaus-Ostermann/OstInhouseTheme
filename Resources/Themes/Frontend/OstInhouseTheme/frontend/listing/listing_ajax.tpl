@@ -15,6 +15,10 @@
         {foreach $sArticles as $sArticle}
             {include file="frontend/listing/product-box/box-5column.tpl" productBoxLayout="5column"}
         {/foreach}
+    {elseif $sCategoryContent.template == 'listing_6column.tpl'}
+        {foreach $sArticles as $sArticle}
+            {include file="frontend/listing/product-box/box-6column.tpl" productBoxLayout="6column"}
+        {/foreach}
     {else}
         {$smarty.block.parent}
     {/if}

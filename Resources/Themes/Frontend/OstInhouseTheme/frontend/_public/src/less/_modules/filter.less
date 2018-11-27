@@ -7,11 +7,22 @@ body.is--ctl-listing.is--act-index{
         top: 0;
         opacity: 1;
         z-index: 4999;
-        width: 1160px;
+        width: 1220px;
     }
 
     div.listing--container.has--sticky-filter {
         padding-top: 75px;
     }
 
+}
+
+
+// sticky filter for other viewports
+@media screen and (max-width: @desktopViewportWidth) and (min-width: @tabletViewportWidth) {
+    body.is--ctl-ostarticlesearch.is--act-index,
+    body.is--ctl-listing.is--act-index{
+        div.content.listing--content div.listing--actions.is--sticky-filter {
+            width: ~"calc(100% - 40px)";
+        }
+    }
 }

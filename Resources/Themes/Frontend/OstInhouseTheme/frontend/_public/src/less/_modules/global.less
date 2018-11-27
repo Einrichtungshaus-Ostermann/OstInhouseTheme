@@ -1,10 +1,8 @@
 
+// default html stuff
 html {
     background: #ffffff;
-}
 
-
-html {
     div.page-wrap {
         background-color: #ffffff;
 
@@ -18,9 +16,18 @@ html {
 
 
 
-// we need to hide the cart because the offcanvas menu needs its
-.shop--navigation .entry--cart {
-    display: none;
+
+// every page has to be more on the edges for tablet and terminal
+@media screen and (min-width: @tabletViewportWidth) {
+    html {
+        div.page-wrap {
+            section.content-main {
+                div.content-main--inner {
+                    padding: 0 20px 0 20px;
+                }
+            }
+        }
+    }
 }
 
 

@@ -1,4 +1,13 @@
 
+
+// we need to hide the cart because the offcanvas menu needs its
+.shop--navigation .entry--cart {
+    display: none;
+}
+
+
+
+// everything for the header
 header.header-main {
 
     // defaults for search container
@@ -88,6 +97,21 @@ header.header-main {
 
 
 
+
+// align left and right with edges of listing
+@media screen and (min-width: @tabletViewportWidth) {
+    header.header-main {
+        div.logo-main {
+            padding-left: 20px;
+        }
+        nav.shop--navigation li.navigation--entry.entry--navigaton-forth {
+            right: 13px;
+        }
+    }
+}
+
+
+
 // fix tablet viewport
 @media screen and (max-width: @tabletLandscapeViewportWidth) and (min-width: @tabletViewportWidth) {
 
@@ -102,7 +126,7 @@ header.header-main {
 
                 span.badge.cart--quantity {
                     margin-left: 10px;
-                    margin-top: 0px;
+                    margin-top: 0;
                 }
 
                 i.icon--basket {
