@@ -69,6 +69,7 @@ class Theme extends Components\Theme
         'src/js/override/jquery.overlay.js',
         'src/js/jquery.ost-image-zoom.js',
         'src/js/jquery.ost-article-tabs.js',
+        'src/js/jquery.ost-filter-component.js',
         'src/js/jquery.ost-sticky-filter.js'
     ];
 
