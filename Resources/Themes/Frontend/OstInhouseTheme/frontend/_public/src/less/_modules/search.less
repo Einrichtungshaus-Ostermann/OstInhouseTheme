@@ -2,15 +2,22 @@
 
 body.is--ctl-search .listing {
 
+    // remove headline
+    h1.search--headline {
+        display: none;
+    }
+
+    // fix product box
     div.product--box.box--image {
         width: 20%;
 
         .product--image {
-            height: 180px;
+            height: 135px;
         }
 
         .product--price-info {
             text-align: right;
+            height: 20px;
         }
 
         .product--actions {
