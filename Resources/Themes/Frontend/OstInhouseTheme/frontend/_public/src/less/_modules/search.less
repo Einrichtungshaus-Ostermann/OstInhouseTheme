@@ -1,33 +1,37 @@
 
-
-body.is--ctl-search .listing {
+// in search controller
+body.is--ctl-search {
 
     // remove headline
     h1.search--headline {
         display: none;
     }
 
-    // fix product box
-    div.product--box.box--image {
-        width: 20%;
+    // in listing
+    .listing {
 
-        .product--image {
-            height: 150px;
-        }
+        // fix product box
+        div.product--box.box--image {
+            width: 20%;
 
-        .product--price-info {
-            text-align: right;
-            height: 20px;
+            .product--image {
+                height: 150px;
+            }
 
-            .price--unit {
+            .product--price-info {
+                text-align: right;
+                height: 20px;
+
+                .price--unit {
+                    display: none;
+                }
+            }
+
+            .product--actions {
                 display: none;
             }
         }
 
-        .product--actions {
-            display: none;
-        }
     }
-
 
 }
