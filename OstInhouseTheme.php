@@ -15,6 +15,9 @@
  * - added image-zoom js in desktop viewport
  * - removed more whitespace on top of listing
  *
+ * 1.0.3
+ * - fixed image-zoom js
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
