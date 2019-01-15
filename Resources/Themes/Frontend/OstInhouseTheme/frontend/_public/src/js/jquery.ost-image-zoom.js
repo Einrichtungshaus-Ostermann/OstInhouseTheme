@@ -11,5 +11,7 @@
 
 $.overridePlugin( "swImageZoom", {
     init: function () {
+        if (StateManager.getCurrentState() === "xl")
+            me.superclass.init.apply(me, arguments);
     }
 });
