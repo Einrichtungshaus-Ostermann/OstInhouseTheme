@@ -48,3 +48,24 @@ html body.is--ctl-listing, html body.is--ctl-ostarticlesearch {
         }
     }
 }
+
+
+
+
+// remove whitespace on top of listing
+@media screen and(min-width: @tabletViewportWidth) {
+
+    html body.is--ctl-listing, html body.is--ctl-ostarticlesearch, html body.is--ctl-search {
+        section.content-main {
+
+            aside.sidebar-main.off-canvas {
+                display: none;
+            }
+
+            div.content.listing--content, div.content.search--content {
+                padding-top: 0;
+                margin-top: 0;
+            }
+        }
+    }
+}

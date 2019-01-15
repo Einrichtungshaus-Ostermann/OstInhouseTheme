@@ -8,6 +8,9 @@
  * 1.0.0
  * - initial release
  *
+ * 1.0.1
+ * - removed whitespace on top of listing
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
