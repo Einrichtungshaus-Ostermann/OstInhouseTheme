@@ -13,6 +13,7 @@
  *
  * 1.0.2
  * - added image-zoom js in desktop viewport
+ * - removed more whitespace on top of listing
  *
  * @package   OstInhouseTheme
  *
