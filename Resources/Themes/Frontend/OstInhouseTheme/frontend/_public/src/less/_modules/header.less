@@ -158,3 +158,15 @@ body.is--consultant header.header-main {
     }
 }
 
+
+
+// fix search input for very low viewports
+@media screen and (max-width: @tabletViewportWidth) {
+    header.header-main {
+        nav.shop--navigation li.navigation--entry.entry--search {
+            left: 45%;
+            width: 50%;
+            top: -47px;
+        }
+    }
+}

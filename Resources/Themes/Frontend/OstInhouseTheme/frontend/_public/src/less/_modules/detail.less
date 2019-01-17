@@ -54,3 +54,21 @@ html body.is--ctl-detail {
         }
     }
 }
+
+
+
+// fix main elements for lower viewports
+@media screen and (max-width: @tabletLandscapeViewportWidth) {
+    html body.is--ctl-detail {
+        div.content.product--details div.product--detail-upper {
+            div.product--image-container {
+                width: 100%;
+            }
+            div.product--buybox {
+                width: 100%;
+            }
+        }
+    }
+}
+
+

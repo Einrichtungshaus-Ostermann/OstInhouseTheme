@@ -18,6 +18,9 @@
  * 1.0.3
  * - fixed image-zoom js
  *
+ * 1.0.4
+ * - fixed article details and search input for tablet viewport
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
