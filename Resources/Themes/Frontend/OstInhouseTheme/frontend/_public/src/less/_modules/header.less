@@ -170,3 +170,49 @@ body.is--consultant header.header-main {
         }
     }
 }
+
+
+
+// fix header for specific viewport range
+@media screen and (min-width: @phoneLandscapeViewportWidth) and (max-width: @tabletViewportWidth) {
+    header.header-main {
+        nav.shop--navigation ul.navigation--list {
+            li.navigation--entry.entry--navigaton-back, li.navigation--entry.entry--navigaton-forth {
+                display: none;
+            }
+            li.navigation--entry.entry--search {
+                left: 45%;
+                width: 40%;
+                top: -47px;
+            }
+            li.ost-consultant--login {
+                right: 2% !important;
+                width: 11% !important;
+                top: -47px;
+            }
+        }
+    }
+}
+
+
+
+// fix header for exactly that 1px tablet viewport width
+@media screen and (min-width: @tabletViewportWidth) and (max-width: @tabletViewportWidth) {
+    header.header-main {
+        nav.shop--navigation ul.navigation--list {
+            li.navigation--entry.entry--navigaton-back, li.navigation--entry.entry--navigaton-forth {
+                display: none;
+            }
+            li.navigation--entry.entry--search {
+                top: inherit;
+                left: 25%;
+                width: 50%;
+            }
+            li.ost-consultant--login {
+                right: 2% !important;
+                width: 21% !important;
+                top: inherit;
+            }
+        }
+    }
+}

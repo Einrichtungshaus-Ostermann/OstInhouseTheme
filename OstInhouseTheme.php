@@ -21,6 +21,9 @@
  * 1.0.4
  * - fixed article details and search input for tablet viewport
  *
+ * 1.0.5
+ * - fixed header for exactly that one pixel tablet viewport width
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
