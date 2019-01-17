@@ -72,3 +72,22 @@ html body.is--ctl-detail {
 }
 
 
+
+// fix header for exactly that 1px tablet landscape viewport width
+@media screen and (min-width: @tabletLandscapeViewportWidth) and (max-width: @tabletLandscapeViewportWidth) {
+    html body.is--ctl-detail {
+        div.content.product--details div.product--detail-upper {
+            div.product--image-container {
+                width: 48%;
+                margin-right: 4%;
+                float: left;
+            }
+            div.product--buybox {
+                width: 48%;
+            }
+        }
+    }
+}
+
+
+
