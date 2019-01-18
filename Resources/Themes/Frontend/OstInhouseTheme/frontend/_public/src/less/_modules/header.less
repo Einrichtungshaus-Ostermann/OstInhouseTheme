@@ -201,16 +201,23 @@ body.is--consultant header.header-main {
     header.header-main {
         nav.shop--navigation ul.navigation--list {
             li.navigation--entry.entry--navigaton-back, li.navigation--entry.entry--navigaton-forth {
-                display: none;
+                display: inherit;
+            }
+            li.navigation--entry.entry--navigaton-back {
+                right: 12%;
             }
             li.navigation--entry.entry--search {
                 top: inherit;
-                left: 25%;
+                left: 10%;
                 width: 50%;
             }
+            li.navigation--entry.entry--cart {
+                right: 22% !important;
+                width: 16% !important;
+            }
             li.ost-consultant--login {
-                right: 2% !important;
-                width: 21% !important;
+                right: 22% !important;
+                width: 16% !important;
                 top: inherit;
             }
         }

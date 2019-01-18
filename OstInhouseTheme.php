@@ -27,6 +27,9 @@
  * 1.0.6
  * - fixed article details for exactly that one pixel tablet landscape viewport width
  *
+ * 1.0.7
+ * - fixed header again for exactly that one pixel tablet viewport width
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
