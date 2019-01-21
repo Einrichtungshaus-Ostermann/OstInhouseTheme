@@ -30,6 +30,9 @@
  * 1.0.7
  * - fixed header again for exactly that one pixel tablet viewport width
  *
+ * 1.0.8
+ * - removed top margin from registration
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
