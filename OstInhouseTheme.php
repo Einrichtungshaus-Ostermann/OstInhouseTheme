@@ -33,6 +33,9 @@
  * 1.0.8
  * - removed top margin from registration
  *
+ * 1.0.9
+ * - removed agb checkbox
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
