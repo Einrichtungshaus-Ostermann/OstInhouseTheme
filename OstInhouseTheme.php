@@ -36,6 +36,9 @@
  * 1.0.9
  * - removed agb checkbox
  *
+ * 1.0.10
+ * - removed close button from every modal popup
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
