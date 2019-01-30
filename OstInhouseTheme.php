@@ -47,6 +47,10 @@
  * - removed voucher checkbox from checkout/cart
  * - removed additional article details from checkout/confirm
  *
+ * 1.0.13
+ * - show ost-consultant advance payment and ost-checkout-signature in one row
+ *   in checkout/confirm
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
