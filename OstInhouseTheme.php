@@ -45,6 +45,7 @@
  * 1.0.12
  * - removed add-product form from checkout/cart
  * - removed voucher checkbox from checkout/cart
+ * - removed additional article details from checkout/confirm
  *
  * @package   OstInhouseTheme
  *
