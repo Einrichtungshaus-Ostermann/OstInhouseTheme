@@ -28,3 +28,21 @@ html body.is--ctl-checkout.is--act-cart {
 }
 
 
+
+// remove voucher checkbox
+html body.is--ctl-checkout.is--act-cart {
+    .product--table .add-voucher--form {
+        .add-voucher--checkbox {
+            display: none;
+        }
+        .add-voucher--label {
+            display: none;
+        }
+        .add-voucher--panel {
+            margin-top: 0;
+        }
+        .add-voucher--panel.is--hidden {
+            display: block !important;
+        }
+    }
+}
