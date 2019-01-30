@@ -16,3 +16,15 @@ html body.is--ctl-checkout.is--act-confirm {
 }
 
 
+
+// remove "add-product" and fix last row from product tablee
+html body.is--ctl-checkout.is--act-cart {
+    form.table--add-product.add-product--form {
+        display: none;
+    }
+    .product--table .table--tr.is--last-row {
+        border-bottom: none;
+    }
+}
+
+

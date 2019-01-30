@@ -42,6 +42,9 @@
  * 1.0.11
  * - removed usage of let for grunt
  *
+ * 1.0.12
+ * - removed add-product form from checkout/cart
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
