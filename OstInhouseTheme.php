@@ -39,6 +39,9 @@
  * 1.0.10
  * - removed close button from every modal popup
  *
+ * 1.0.11
+ * - removed usage of let for grunt
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
