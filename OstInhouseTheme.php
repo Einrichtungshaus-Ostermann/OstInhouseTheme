@@ -51,6 +51,9 @@
  * - show ost-consultant advance payment and ost-checkout-signature in one row
  *   in checkout/confirm
  *
+ * 1.0.14
+ * - added floor as additional field 1 in customer registration
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
