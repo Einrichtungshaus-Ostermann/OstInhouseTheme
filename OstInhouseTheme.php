@@ -54,6 +54,9 @@
  * 1.0.14
  * - added floor as additional field 1 in customer registration
  *
+ * 1.0.15
+ * - remove benefit footer in checkout
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
