@@ -358,12 +358,9 @@
                     // set display to none instead of .hide() for browser compatibility
                     $modalBox.css('display', 'none');
 
-                    // we need this or the next directly opened modal will be faulty.
-                    // like a new modal directly after $.ostFoundationAlert() modal
-                    me._$content.empty();
-
                     opts.onClose.call(me);
 
+                    me._$content.empty();
                 });
             }
 
@@ -393,24 +390,12 @@
                     duration: duration
                 });
 
-            /*
             if (!$.support.transition) {
                 $modalBox.stop(true).animate(css, opts.duration, opts.animation, callback);
                 return;
             }
 
             $modalBox.stop(true).transition(css, opts.duration, opts.animation, callback);
-            */
-
-
-
-            $modalBox.css( css );
-
-            if (typeof(callback) == "function") {
-                callback.call( me );
-            }
-
-
 
             $.publish('plugin/swModal/onSetTransition', [ me, css, opts ]);
         },
@@ -569,8 +554,6 @@
             me._$closeButton.on('click.modal touchstart.modal', $.proxy(me.close, me));
 
             $window.on('keydown.modal', $.proxy(me.onKeyDown, me));
-
-            /*
             StateManager.on('resize', me.onWindowResize, me);
 
             StateManager.registerListener({
@@ -582,7 +565,6 @@
                     me._$modalBox.removeClass('is--fullscreen');
                 }
             });
-            */
 
             $.publish('plugin/swModal/onRegisterEvents', [ me ]);
         },
@@ -692,9 +674,7 @@
                 delete me.options[p];
             }
 
-            /*
             StateManager.off('resize', me.onWindowResize, [ me ]);
-            */
         }
     };
 
@@ -776,7 +756,7 @@
             event.preventDefault();
 
             var me = this,
-                target = (me.$target.length === 1 && me.$target) || $(event.currentTarget);
+                target = (me.$target.length === 1 && me.$target) || $(event.target);
 
             $.modal.open(me.opts.content || (me.opts.mode !== 'local' ? target.attr('href') : target), me.opts);
 

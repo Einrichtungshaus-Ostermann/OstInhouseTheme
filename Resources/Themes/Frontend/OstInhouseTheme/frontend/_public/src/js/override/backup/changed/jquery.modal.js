@@ -149,13 +149,6 @@
             height: 600,
 
             /**
-             * The max height if sizing is set to `content`
-             *
-             * @type {Number}
-             */
-            maxHeight: 0,
-
-            /**
              * Whether or not the overlay should be shown.
              *
              * @type {Boolean}
@@ -293,7 +286,6 @@
             me.setTitle(opts.title);
             me.setWidth(opts.width);
             me.setHeight(opts.height);
-            me.setMaxHeight(opts.maxHeight);
 
             // set display to block instead of .show() for browser compatibility
             $modalBox.css('display', 'block');
@@ -358,11 +350,12 @@
                     // set display to none instead of .hide() for browser compatibility
                     $modalBox.css('display', 'none');
 
-                    // we need this or the next directly opened modal will be faulty.
-                    // like a new modal directly after $.ostFoundationAlert() modal
+
                     me._$content.empty();
 
+
                     opts.onClose.call(me);
+
 
                 });
             }
@@ -373,7 +366,7 @@
         },
 
         /**
-         * Sets the transition of the modal box.
+         * Sets the title of the modal box.
          *
          * @public
          * @method setTransition
@@ -406,9 +399,11 @@
 
             $modalBox.css( css );
 
-            if (typeof(callback) == "function") {
+            if ( typeof(callback) == "function" )
+            {
                 callback.call( me );
             }
+
 
 
 
@@ -489,7 +484,7 @@
 
             height = (typeof height === 'string' && !(/^\d+$/.test(height))) ? height : window.parseInt(height, 10);
 
-            if (hasTitle) {
+            if(hasTitle) {
                 headerHeight = window.parseInt(me._$header.css('height'), 10);
                 me._$content.css('height', (height - headerHeight));
             } else {
@@ -498,27 +493,6 @@
 
             me._$modalBox.css('height', height);
             $.publish('plugin/swModal/onSetHeight', [ me ]);
-        },
-
-        /**
-         * Sets the max height of the modal box if the provided value is not empty or greater than 0.
-         * If a string was passed containing a only number, it will be parsed as a pixel value.
-         *
-         * @public
-         * @method setMaxHeight
-         * @param {Number|String} height
-         */
-        setMaxHeight: function (height) {
-            var me = this;
-
-            if (!height) {
-                return;
-            }
-
-            height = (typeof height === 'string' && !(/^\d+$/.test(height))) ? height : window.parseInt(height, 10);
-
-            me._$modalBox.css('max-height', height);
-            $.publish('plugin/swModal/onSetMaxHeight', [ me ]);
         },
 
         /**
@@ -639,10 +613,9 @@
          */
         center: function () {
             var me = this,
-                $modalBox = me._$modalBox,
-                windowHeight = window.innerHeight || $(window).height();
+                $modalBox = me._$modalBox;
 
-            $modalBox.css('top', (windowHeight - $modalBox.height()) / 2);
+            $modalBox.css('top', ($(window).height() - $modalBox.height()) / 2);
 
             $.publish('plugin/swModal/onCenter', [ me ]);
         },
@@ -759,7 +732,7 @@
 
             me._on(me.$target, 'click', $.proxy(me.onClick, me));
 
-            $.subscribe(me.getEventName('plugin/swModal/onClose'), $.proxy(me.onClose, me));
+            $.subscribe('plugin/swModal/onClose', $.proxy(me.onClose, me));
 
             $.publish('plugin/swModalbox/onRegisterEvents', [ me ]);
         },
@@ -776,7 +749,7 @@
             event.preventDefault();
 
             var me = this,
-                target = (me.$target.length === 1 && me.$target) || $(event.currentTarget);
+                target = me.$target.length === 1 && me.$target || $(event.target);
 
             $.modal.open(me.opts.content || (me.opts.mode !== 'local' ? target.attr('href') : target), me.opts);
 
@@ -800,7 +773,7 @@
         },
 
         /**
-         * This method closes the modal box when it is opened, destroys
+         * This method closes the modal box when its opened, destroys
          * the plugin and removes all registered events
          *
          * @public
@@ -813,9 +786,10 @@
                 $.modal.close();
             }
 
-            $.unsubscribe(me.getEventName('plugin/swModal/onClose'));
+            $.unsubscribe('plugin/swModal/onClose', $.proxy(me.onClose, me));
 
             me._destroy();
         }
     });
 })(jQuery, window);
+

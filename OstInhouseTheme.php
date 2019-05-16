@@ -57,6 +57,9 @@
  * 1.0.15
  * - remove benefit footer in checkout
  *
+ * 1.0.16
+ * - fixed jquery overrides
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

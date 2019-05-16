@@ -47,7 +47,7 @@
             delay: 0,
 
             /** @string - Animation speed of the appearing of the components  */
-            animationSpeed: 0,
+            animationSpeed: 500,
 
             /** @boolean - `true` to allow the user to close the overlay with a click */
             closeOnClick: true,
@@ -110,7 +110,7 @@
                     callback.call(scope, elements);
                     $.publish('plugin/swLoadingIndicator/onOpenFinished', [ me, elements ]);
                 });
-            }, 0);
+            }, me.options.delay);
 
             $.publish('plugin/swLoadingIndicator/onOpen', [ me, elements ]);
 

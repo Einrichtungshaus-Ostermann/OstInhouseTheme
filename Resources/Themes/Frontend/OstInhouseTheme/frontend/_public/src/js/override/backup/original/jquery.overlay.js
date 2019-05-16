@@ -110,7 +110,7 @@
 
                 deferred.resolve(me, me.$overlay);
                 callback.call(scope, me, me.$overlay);
-            }, 0);
+            }, me.options.delay);
 
             me.$overlay.on(me.options.events, $.proxy(me.onOverlayClick, this, me.options));
 
@@ -150,17 +150,11 @@
             me.$overlay.removeClass(me.options.openClass + ' ' + me.options.closableClass);
             $renderElement.removeClass(me.options.relativeClass);
 
-            me.$overlay.off(me.options.events).prop('style', '').remove();
-            deferred.resolve(me);
-            callback.call(scope);
-
-            /*
             me.$overlay.one('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {
                 me.$overlay.off(me.options.events).prop('style', '').remove();
                 deferred.resolve(me);
                 callback.call(scope);
             });
-            */
 
             return deferred;
         },
