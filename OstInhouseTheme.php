@@ -60,6 +60,9 @@
  * 1.0.16
  * - fixed jquery overrides
  *
+ * 1.0.17
+ * - added salesman-finder icon
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

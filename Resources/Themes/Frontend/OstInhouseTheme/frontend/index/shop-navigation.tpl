@@ -17,4 +17,7 @@
     {* experimental consultant login button *}
     <li class="icon--evernote ost-consultant--login" style="position: absolute; cursor: pointer; width: 15%; right: 20%; font-size: 50px; opacity: 0;"></li>
 
+    {* salesman finder button *}
+    <li class="navigation--entry entry--salesman-finder icon--chat" style=""></li>
+
 {/block}
