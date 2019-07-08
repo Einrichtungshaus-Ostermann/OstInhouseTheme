@@ -63,6 +63,9 @@
  * 1.0.17
  * - added salesman-finder icon
  *
+ * 1.0.18
+ * - fixed 3:4 aspect ratio for article images in listing
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
