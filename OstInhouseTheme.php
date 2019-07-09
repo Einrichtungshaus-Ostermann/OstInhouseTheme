@@ -75,6 +75,9 @@
  * 1.0.21
  * - fixed css for ost-article-family product-slider
  *
+ * 1.0.22
+ * - added close button to image-gallery modal
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
