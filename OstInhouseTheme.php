@@ -72,6 +72,9 @@
  * 1.0.20
  * - added css for ost-article-family product-slider
  *
+ * 1.0.21
+ * - fixed css for ost-article-family product-slider
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
