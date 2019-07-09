@@ -78,6 +78,9 @@
  * 1.0.22
  * - added close button to image-gallery modal
  *
+ * 1.0.23
+ * - added default hiding for salesman-finder icon
+ * 
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
