@@ -69,6 +69,9 @@
  * 1.0.19
  * - added support for ost-article-family
  *
+ * 1.0.20
+ * - added css for ost-article-family product-slider
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
