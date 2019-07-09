@@ -66,6 +66,9 @@
  * 1.0.18
  * - fixed 3:4 aspect ratio for article images in listing
  *
+ * 1.0.19
+ * - added support for ost-article-family
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
