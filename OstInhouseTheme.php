@@ -80,6 +80,9 @@
  *
  * 1.0.23
  * - added default hiding for salesman-finder icon
+ *
+ * 1.0.24
+ * - added border to product-boxes in article-family slider
  * 
  * @package   OstInhouseTheme
  *
