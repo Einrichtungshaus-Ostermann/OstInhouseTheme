@@ -83,6 +83,9 @@
  *
  * 1.0.24
  * - added border to product-boxes in article-family slider
+ *
+ * 1.0.25
+ * - changed width of quantity selection in buy-box
  * 
  * @package   OstInhouseTheme
  *
