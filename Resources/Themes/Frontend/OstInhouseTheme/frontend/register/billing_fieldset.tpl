@@ -21,3 +21,14 @@
     {include file="frontend/_includes/account--floor-selection.tpl" config=$floor}
 
 {/block}
+
+
+
+{* ... *}
+{block name='frontend_register_billing_fieldset_different_shipping'}
+    {if !$update}
+        <p>
+            {s name="alternate-shipping-address"}Eine abweichende Lieferadresse kann im weiteren Bestellprozess angegeben werden.{/s}
+        </p>
+    {/if}
+{/block}

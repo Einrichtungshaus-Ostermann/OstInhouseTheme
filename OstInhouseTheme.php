@@ -86,6 +86,9 @@
  *
  * 1.0.25
  * - changed width of quantity selection in buy-box
+ *
+ * 1.0.26
+ * - removed alternate shipping address from registration
  * 
  * @package   OstInhouseTheme
  *
