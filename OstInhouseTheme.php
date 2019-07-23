@@ -92,6 +92,9 @@
  *
  * 1.0.27
  * - set germany as default country selection
+ *
+ * 1.0.28
+ * - changed snippets and css for checkout process
  * 
  * @package   OstInhouseTheme
  *
