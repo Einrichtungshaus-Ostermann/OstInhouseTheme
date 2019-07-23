@@ -21,3 +21,18 @@
     {include file="frontend/_includes/account--floor-selection.tpl" config=$floor}
 
 {/block}
+
+
+
+{* set germany as default if no form data is given *}
+{block name='frontend_address_form_input_country'}
+
+    {* set germany as default *}
+    {if $formData.country.id|intval === 0}
+        {$formData.country.id = 2}
+    {/if}
+
+    {* prepend the country *}
+    {$smarty.block.parent}
+
+{/block}

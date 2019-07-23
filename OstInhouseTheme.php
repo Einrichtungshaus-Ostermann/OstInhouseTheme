@@ -89,6 +89,9 @@
  *
  * 1.0.26
  * - removed alternate shipping address from registration
+ *
+ * 1.0.27
+ * - set germany as default country selection
  * 
  * @package   OstInhouseTheme
  *

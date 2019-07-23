@@ -21,3 +21,18 @@
     {include file="frontend/_includes/account--floor-selection.tpl" config=$floor}
 
 {/block}
+
+
+
+{* set germany as default if no form data is given *}
+{block name='frontend_register_shipping_fieldset_input_country'}
+
+    {* set germany as default *}
+    {if $form_data.country|intval === 0}
+        {$form_data.country = 2}
+    {/if}
+
+    {* prepend the country *}
+    {$smarty.block.parent}
+
+{/block}
