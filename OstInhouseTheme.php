@@ -101,7 +101,10 @@
  *
  * 1.0.30
  * - fixed salesman-finder icon
- * 
+ *
+ * 1.0.31
+ * - reverting the fix
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
