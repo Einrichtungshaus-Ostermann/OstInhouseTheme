@@ -69,6 +69,14 @@ header.header-main {
         display: none;
     }
 
+    nav.shop--navigation li.navigation--entry.entry--salesman-finder.icon--salesman-finder {
+        /* background: url(/custom/plugins/OstSalesmanFinder/Resources/frontend/img/salesman-finder--idle--icon.png); */
+        height: 52px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
     // shopping cart icon
     nav.shop--navigation li.navigation--entry.entry--cart {
         position: absolute;
@@ -234,3 +242,32 @@ body.is--consultant header.header-main {
         }
     }
 }
+
+
+
+
+body {
+    header.header-main {
+        nav.shop--navigation li.navigation--entry.entry--salesman-finder.icon--salesman-finder {
+            display: list-item;
+        }
+        nav.shop--navigation li.navigation--entry.entry--salesman-finder.icon--chat {
+            display: none;
+        }
+    }
+}
+
+
+
+body.is--consultant {
+    header.header-main {
+        nav.shop--navigation li.navigation--entry.entry--salesman-finder.icon--salesman-finder {
+            display: none !important;
+        }
+        nav.shop--navigation li.navigation--entry.entry--salesman-finder.icon--chat {
+            display: list-item;
+        }
+    }
+}
+
+

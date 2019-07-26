@@ -95,6 +95,9 @@
  *
  * 1.0.28
  * - changed snippets and css for checkout process
+ *
+ * 1.0.29
+ * - added salesman-finder icon to top navigation
  * 
  * @package   OstInhouseTheme
  *

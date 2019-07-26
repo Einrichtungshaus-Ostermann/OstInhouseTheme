@@ -19,5 +19,6 @@
 
     {* salesman finder button *}
     <li class="navigation--entry entry--salesman-finder icon--chat" style=""></li>
+    <li class="navigation--entry entry--salesman-finder icon--salesman-finder" style="background-image: url(/custom/plugins/OstSalesmanFinder/Resources/frontend/img/salesman-finder--idle--icon.png)"></li>
 
 {/block}
