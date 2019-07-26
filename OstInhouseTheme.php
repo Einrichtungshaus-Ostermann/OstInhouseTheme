@@ -98,6 +98,9 @@
  *
  * 1.0.29
  * - added salesman-finder icon to top navigation
+ *
+ * 1.0.30
+ * - fixed salesman-finder icon
  * 
  * @package   OstInhouseTheme
  *
