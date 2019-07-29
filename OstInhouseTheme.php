@@ -105,6 +105,9 @@
  * 1.0.31
  * - reverting the fix
  *
+ * 1.0.32
+ * - added "?hideHeader=1" flag to hide the header via get parameter
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

@@ -4,6 +4,9 @@
 
 
 
+{* hide header if we have the flag within get *}
+{block name='frontend_index_body_classes'}{strip}{$smarty.block.parent} {if $smarty.get.hideHeader == "1"}has--no-header{/if}{/strip}{/block}
+
 {* remove top bar *}
 {block name='frontend_index_top_bar_container'}{/block}
 
