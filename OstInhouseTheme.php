@@ -111,6 +111,9 @@
  * 1.0.33
  * - fixed position basket icon for consultants
  *
+ * 1.0.34
+ * - fixed header for exactly that one pixel tablet landscape viewport width
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
