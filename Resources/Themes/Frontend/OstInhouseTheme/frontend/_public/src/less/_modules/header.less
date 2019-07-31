@@ -164,6 +164,20 @@ header.header-main {
 
 
 
+// fix that one pixel and higher
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+    header.header-main {
+        nav.shop--navigation li.navigation--entry.entry--cart {
+            margin-top: 0;
+            margin-left: 0;
+            right: 17%;
+        }
+    }
+}
+
+
+
+
 // show login button by default
 body header.header-main {
     nav.shop--navigation li.icon--evernote.ost-consultant--login {
@@ -243,6 +257,11 @@ body.is--consultant header.header-main {
         }
     }
 }
+
+
+
+
+
 
 
 body.has--no-header {

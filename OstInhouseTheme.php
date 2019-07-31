@@ -108,6 +108,9 @@
  * 1.0.32
  * - added "?hideHeader=1" flag to hide the header via get parameter
  *
+ * 1.0.33
+ * - fixed position basket icon for consultants
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
