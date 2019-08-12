@@ -114,6 +114,10 @@
  * 1.0.34
  * - fixed header for exactly that one pixel tablet landscape viewport width
  *
+ * 1.0.35
+ * - fixed checkout for customer-notification-type
+ * - fixed preview.png
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

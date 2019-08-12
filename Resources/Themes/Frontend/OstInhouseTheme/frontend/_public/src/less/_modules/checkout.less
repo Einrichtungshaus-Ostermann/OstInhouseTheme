@@ -49,28 +49,37 @@ html body.is--ctl-checkout.is--act-cart {
 
 
 
-// ost-consultant advance payment and ost-checkout-signature in one row
+// ost-consultant advance payment, ost-consultant customer notification type and ost-checkout-signature in one row
 @media screen and (min-width: @tabletLandscapeViewportWidth) {
     html body.is--ctl-checkout.is--act-confirm {
         .ost-consultant--advance-payment--container {
             float: left;
-            width: 49%;
+            width: 32%;
             margin-right: 2%;
             margin-top: 0;
             input {
                 width: 50% !important;
             }
             button {
-                width: 30%;
+                width: 40%;
                 text-align: center;
             }
             div.panel--body.is--rounded {
                 min-height: 180px;
             }
         }
+        .ost-consultant--customer-notification-type--container {
+            float: left;
+            width: 32%;
+            margin-right: 2%;
+            margin-top: 0;
+            div.panel--body.is--rounded {
+                min-height: 180px;
+            }
+        }
         .ost-checkout-signature--container {
             float: left;
-            width: 49% !important;
+            width: 32% !important;
             margin-top: 0;
             div.panel--body.is--rounded {
                 min-height: 180px;
