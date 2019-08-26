@@ -1,8 +1,5 @@
 
-
-
 .ost-article-family {
-
     margin-bottom: 20px;
     margin-top: 20px;
 
@@ -30,9 +27,25 @@
 
     div.product-slider {
         border: 1px solid #dadae5;
+
+        div.product--box.box--dvsn-article-family {
+            div.product--btn-container {
+                display: none;
+            }
+        }
     }
-
-
 }
 
 
+
+body.is--consultant {
+    .ost-article-family {
+        div.product-slider {
+            div.product--box.box--dvsn-article-family {
+                div.product--btn-container {
+                    display: inherit;
+                }
+            }
+        }
+    }
+}

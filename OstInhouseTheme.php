@@ -118,6 +118,9 @@
  * - fixed checkout for customer-notification-type
  * - fixed preview.png
  *
+ * 1.0.36
+ * - removed add-to-basket button from ost-article-family slider
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
