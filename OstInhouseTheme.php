@@ -124,6 +124,9 @@
  * 1.0.37
  * - added similar-articles tab to article details
  *
+ * 1.0.38
+ * - fixed css for similar-articles
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
