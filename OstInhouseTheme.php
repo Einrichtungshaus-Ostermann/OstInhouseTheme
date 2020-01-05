@@ -121,6 +121,9 @@
  * 1.0.36
  * - removed add-to-basket button from ost-article-family slider
  *
+ * 1.0.37
+ * - added similar-articles tab to article details
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
