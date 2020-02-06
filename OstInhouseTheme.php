@@ -127,6 +127,9 @@
  * 1.0.38
  * - fixed css for similar-articles
  *
+ * 1.0.39
+ * - added pick-up date selection css
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>

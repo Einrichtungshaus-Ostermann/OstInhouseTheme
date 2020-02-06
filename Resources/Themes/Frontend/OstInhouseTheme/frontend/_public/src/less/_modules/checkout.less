@@ -52,9 +52,22 @@ html body.is--ctl-checkout.is--act-cart {
 // ost-consultant advance payment, ost-consultant customer notification type and ost-checkout-signature in one row
 @media screen and (min-width: @tabletLandscapeViewportWidth) {
     html body.is--ctl-checkout.is--act-confirm {
+        .ost-consultant--pick-up-date--container {
+            float: left;
+            width: 23%;
+            margin-right: 2%;
+            margin-top: 0;
+            div.panel--body.is--rounded {
+                min-height: 180px;
+
+                div.date-selection {
+                    width: 100%;
+                }
+            }
+        }
         .ost-consultant--advance-payment--container {
             float: left;
-            width: 32%;
+            width: 24%;
             margin-right: 2%;
             margin-top: 0;
             input {
@@ -70,7 +83,7 @@ html body.is--ctl-checkout.is--act-cart {
         }
         .ost-consultant--customer-notification-type--container {
             float: left;
-            width: 32%;
+            width: 24%;
             margin-right: 2%;
             margin-top: 0;
             div.panel--body.is--rounded {
@@ -79,7 +92,7 @@ html body.is--ctl-checkout.is--act-cart {
         }
         .ost-checkout-signature--container {
             float: left;
-            width: 32% !important;
+            width: 23% !important;
             margin-top: 0;
             div.panel--body.is--rounded {
                 min-height: 180px;
