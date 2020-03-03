@@ -130,8 +130,11 @@
  * 1.0.39
  * - added pick-up date selection css
  *
- *  1.0.40
+ * 1.0.40
  * - add OstExhibitAreaListing support
+ *
+ * 1.0.41
+ * - added no-picture jpg
  *
  * @package   OstInhouseTheme
  *
