@@ -64,9 +64,32 @@ header.header-main {
         margin: 0;
         cursor: pointer;
         width: 8%;
-        right: 29%;
+        right: 38%;
         padding-top: 6px;
         display: none;
+
+
+
+        // for pre-version release
+        // should be removed
+        right: 29%;
+    }
+
+    nav.shop--navigation li.navigation--entry.entry--mailer {
+        display: none;
+        font-size: 28px;
+        position: absolute;
+        margin: 0;
+        cursor: pointer;
+        width: 8%;
+        right: 28%;
+        padding-top: 11px;
+
+
+
+        // for pre-version release
+        // should be removed
+        display: none !important;
     }
 
     nav.shop--navigation li.navigation--entry.entry--salesman-finder.icon--salesman-finder {
@@ -115,6 +138,20 @@ header.header-main {
 
 }
 
+
+
+// ...
+body.is--consultant {
+    header.header-main {
+        nav.shop--navigation li.navigation--entry.entry--search {
+
+
+            // for pre-version release
+            // the comment should be removed
+            // width: 50%;
+        }
+    }
+}
 
 
 
@@ -189,6 +226,9 @@ body header.header-main {
 body.is--consultant header.header-main {
     nav.shop--navigation li.icon--evernote.ost-consultant--login {
         display: none;
+    }
+    nav.shop--navigation li.entry--mailer {
+        display: inline-block;
     }
 }
 

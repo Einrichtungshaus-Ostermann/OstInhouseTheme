@@ -136,6 +136,9 @@
  * 1.0.41
  * - added no-picture jpg
  *
+ * 1.0.42
+ * - pre-version mailer
+ *
  * @package   OstInhouseTheme
  *
  * @author    Eike Brandt-Warneke <e.brandt-warneke@ostermann.de>
